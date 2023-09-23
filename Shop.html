@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="design"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href ="#">Home</a></li>
+                <li><a href ="#">Menu</a></li>
+                <li><a href ="#">New Offers</a></li>
+                <li><a href ="#">Contacts</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Flower for your Love<br>It's <span>Freshly Picked</span></h2>
+                <p>Gabriel is the proud owner and designer behind Flower Shop Designs 
+                    in Metro Manila Philippines. Special events, local deliveriessss and
+                    walk-in services are all available. They even help with house plants too!</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="item1.png" class="flowers">
+        </div>
+        </div>
+        <ul class="flower">
+            <li><img src ="flower1.png" onclick="imgslider('item1.png');changecolor('#c22020b2')"></li>
+            <li><img src ="flower2.png" onclick="imgslider('item2.png');changecolor('#d112c1b2')"></li>
+            <li><img src ="flower3.png" onclick="imgslider('item3.png');changecolor('#cfc50ab2')"></li>
+        </ul>
+        <ul class="socmed">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+
+<script type="text/javascript">
+    function imgslider(anything){
+        document.querySelector('.flowers').src = anything;
+    }
+    function changecolor(color){
+        const design = document.querySelector('.design');
+        design.style.background = color;
+    }
+</script>
+
+</body>
+</html>
